@@ -95,7 +95,7 @@
         "displayTitle": "Narrative",
         "body": "The narrative component lets you scroll through a series of images each with some accompanying text.<br><br>This component is always spanned.",
         "instruction": "Select the next and back arrows to find out more.",
-        "mobileInstruction": "Select the next and back arrows followed by the plus icon to find out more.",
+        "mobileInstruction": "Select the plus icons followed by the next and back arrows to find out more.",
         "_items": [
             {
                 "title": "Narrative item 1",
