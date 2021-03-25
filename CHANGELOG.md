@@ -1,3 +1,16 @@
+## [5.12.1] - 2021-03-24
+
+### Fixed
+* Poor wording of Narrative mobile instruction in the 'default course' content ([#3077](https://github.com/adaptlearning/adapt_framework/issues/3077))
+* Various issues caused by including the React libraries from `node_modules` rather than loading them as standard libraries ([#3080](https://github.com/adaptlearning/adapt_framework/issues/3080))
+* AAT preview hanging due to unhandled `promise` rejections in the Grunt tasks ([#3084](https://github.com/adaptlearning/adapt_framework/issues/3084))
+* `ItemsQuestionModel` triggering a Handlebars error if the new 'ARIA answer' globals weren't defined for components (such as MCQ & GMCQ) that used/extended that model ([#3089](https://github.com/adaptlearning/adapt_framework/issues/3089))
+* The marking icon in `buttons.hbs` receiving focus when the course was accessed with a screen reader ([#3092](https://github.com/adaptlearning/adapt_framework/issues/3092))
+* `u-clearfix` being read out as 'blank blank' by screen readers ([#3094](https://github.com/adaptlearning/adapt_framework/issues/3094))
+* Some buttons with `aria-disabled` attribute could still be clicked ([#3097](https://github.com/adaptlearning/adapt_framework/issues/3097))
+* `inview` not measuring out-of-bounds correctly ([#3098](https://github.com/adaptlearning/adapt_framework/issues/3098))
+* In multilanguage courses, the accessibility API wasn't starting until after the learner had selected a language ([#3097](https://github.com/adaptlearning/adapt_framework/issues/3097) & [#3101](https://github.com/adaptlearning/adapt_framework/issues/3101))
+
 ## [5.12.0] - 2021-03-17
 ### Added
 * Support for keyboard/screen reader accessibility for the correct answer toggle button (Part of [#2942](https://github.com/adaptlearning/adapt_framework/issues/2942))
@@ -1006,6 +1019,7 @@ The initial version of the Adapt framework.
 ### Added
 - Everything!
 
+[5.12.1]: https://github.com/adaptlearning/adapt_framework/compare/v5.12.0...v5.12.1
 [5.12.0]: https://github.com/adaptlearning/adapt_framework/compare/v5.11.0...v5.12.0
 [5.11.0]: https://github.com/adaptlearning/adapt_framework/compare/v5.10.1...v5.11.0
 [5.10.1]: https://github.com/adaptlearning/adapt_framework/compare/v5.10.0...v5.10.1
